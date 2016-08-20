@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/relativeLayout"
+    android:tag="Relative"
+    tools:context="com.demo.spinnertest.MainActivity">
+
+    <com.selva.widget.PopupActionSpinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:tag="Spinner ONE"/>
+
+
+    <com.selva.widget.PopupActionSpinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="Spinner TWO"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/spinner1"
+        android:spinnerMode="dropdown" />
+
+    <com.selva.widget.PopupActionSpinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/spinner2"
+        android:tag="Spinner THREE"/>
+
+    <com.selva.widget.PopupActionSpinner
+        android:id="@+id/spinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/spinner3"
+        android:tag="Spinner FOUR"/>
+
+</RelativeLayout>
